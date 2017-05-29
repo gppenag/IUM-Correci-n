@@ -18,7 +18,7 @@ public class Main {
 
     public static void MostrarPromedios() throws NCiudadesException {
         for (Ciudad ciudad : BaseDeDatos.ciudades) {
-            if(BaseDeDatos.ciudades.size()<12){
+            if(BaseDeDatos.ciudades.size() != 12){
                 throw new NCiudadesException();
             }
             for (EstacionMet estacion : ciudad.getEstaciones()) {
